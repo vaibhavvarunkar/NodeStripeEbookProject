@@ -1,0 +1,44 @@
+<%- include("header") -%>
+
+<div class="container">
+  <section class="py-2 px-4">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <h1 class="display-3 mt-3 pt-5">A Novel Ebook</h1>
+        <h3 class="pt-3">Buy This Book <span class="type words"></span></h3>
+        <p class="lead">Buy & Read The Most Imaginary Novel Of The Decade</p>
+       
+        <form action="payment" method="POST" class="pt-3">
+          <script
+            src="//checkout.stripe.com/v2/checkout.js"
+            class="stripe-button"
+            data-key="<%= key %>"
+            data-amount="99900"
+            data-currency="inr"
+            data-name="A Novel Book"
+            data-description="Gretest Novel Of The Decade"
+            data-locale="auto"
+          ></script>
+        </form>
+      </div>
+      <div class="col-md-6 pt3">
+        <img src="/img/book.png" alt="" class="img-fluid py-3 book" />
+      </div>
+    </div>
+  </section>
+</div>
+
+<script type="text/javascript" src="config.js"></script>
+<script src="/js/typed.js"></script>
+<script>
+  var typed = new Typed('.type', {
+  strings: ['At Just Rs.999', 'And Change Your Life.'],
+  typeSpeed: 60,
+  backSpeed: 60,
+  loop: true
+});
+</script>
+
+
+<%- include("footer") -%>
+

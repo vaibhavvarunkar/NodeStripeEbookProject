@@ -1,0 +1,20 @@
+{
+  "name": "stripe-project",
+  "version": "1.0.0",
+  "description": "stripe integration",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "vaibhav varunkar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "stripe": "^8.129.0",
+    "typed.js": "^2.0.11"
+  }
+}
